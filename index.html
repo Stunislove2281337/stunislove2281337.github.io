@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Мій сайт з формою</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input, textarea {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 300px;
+    }
+    button {
+      padding: 8px 15px;
+      background: #0078d7;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    #messages {
+      margin-top: 20px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Форма зворотного зв’язку</h1>
+  <form id="feedbackForm">
+    <label>Ваше ім’я:</label>
+    <input type="text" id="name" required>
+    
+    <label>Повідомлення:</label>
+    <textarea id="message" required></textarea>
+    
+    <button type="submit">Надіслати</button>
+  </form>
+
+  <div id="messages">
+    <h2>Отримані повідомлення:</h2>
+    <ul id="messageList"></ul>
+  </div>
+
+  <script>
+    const form = document.getElementById('feedbackForm');
+    const messageList = document.getElementById('messageList');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // щоб сторінка не перезавантажувалась
+      const name = document.getElementById('name').value;
+      const message = document.getElementById('message').value;
+
+      const li = document.createElement('li');
+      li.textContent = name + ": " + message;
+      messageList.appendChild(li);
+
+      form.reset(); // очистити форму
+    });
+  </script>
+</body>
+</html>
