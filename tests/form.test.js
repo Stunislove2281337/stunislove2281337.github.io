@@ -38,7 +38,7 @@ describe('Feedback Form Tests', () => {
 
     const items = document.querySelectorAll('#messageList li');
 
-    expect(items.length).toBe(1);
+    expect(items.length).toBe(999);
     expect(items[0].textContent).toBe('John: Hello');
   });
 
