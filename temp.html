@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Головна сторінка</title>
+
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    /* ====== ОСНОВНИЙ КОНТЕЙНЕР ====== */
+    .wrapper {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ====== ШАПКА ====== */
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .header-container {
+      width: 100%;
+      text-align: center;
+    }
+
+    /* ЛІВИЙ БЛОК */
+    .profile-block {
+      display: inline-block;
+      width: 120px;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    /* ЦЕНТР */
+    .header-center {
+      display: inline-block;
+      width: 700px;
+      vertical-align: middle;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    /* ПРАВИЙ БЛОК */
+    .header-right {
+      display: inline-block;
+      width: 250px;
+      vertical-align: middle;
+      text-align: right;
+    }
+
+    .header-center h1 {
+      margin: 5px 0;
+      font-size: 20px;
+    }
+
+    .header-center h2 {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .icon-img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 5px;
+      background: hsla(0, 0%, 100%, 0.511);
+      margin: 3px;
+    }
+
+    .personal-text {
+      text-align: right;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    /* ====== БАНЕР ====== */
+    .banner {
+      background-color: #00b8cc;
+      color: white;
+      text-align: center;
+      padding: 40px;
+      font-size: 20px;
+    }
+
+    /* ====== ОСНОВНИЙ КОНТЕНТ ====== */
+    .container {
+      margin: 20px 0;
+    }
+
+    /* ЛІВА ЧАСТИНА */
+    .content {
+      display: inline-block;
+      width: 850px;
+      vertical-align: top;
+    }
+
+    /* ПРАВА ЧАСТИНА */
+    .sidebar {
+      display: inline-block;
+      width: 300px;
+      vertical-align: top;
+      margin-left: 20px;
+    }
+
+    /* БЛОКИ */
+    .block {
+      display: inline-block;
+      width: 390px;
+      vertical-align: top;
+
+      background-color: white;
+      padding: 15px;
+      margin: 10px;
+
+      border: 1px solid #ddd;
+      border-radius: 5px;
+
+      box-sizing: border-box;
+    }
+
+    .block h3 {
+      margin-top: 0;
+      color: #0066cc;
+    }
+
+    .block a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+
+    /* РЕКЛАМА */
+    .ad {
+      background-color: #ffcc00;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* ====== МЕНЮ ====== */
+    nav {
+      background-color: #0066cc;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+    }
+
+    nav a:hover {
+      background-color: #004d99;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- ====== ШАПКА ====== -->
+  <header>
+
+    <div class="header-container">
+
+      <!-- ЛІВО -->
+      <div class="profile-block">
+        <img src="photo.png" class="icon-img">
+      </div>
+
+      <!-- ЦЕНТР -->
+      <div class="header-center">
+        <h1>Тернопільський національний технічний університет ім. Івана Пулюя</h1>
+        <h2>Факультет ФІС</h2>
+        <h2>Кафедра комп’ютерних наук</h2>
+      </div>
+
+      <!-- ПРАВО -->
+      <div class="header-right">
+
+        <img src="logo1.png" class="icon-img">
+        <img src="logo2.png" class="icon-img">
+
+        <div class="personal-text">
+          Персональна сторінка: Ярмолюка Станіслава, група СП-33
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!-- ====== МЕНЮ ====== -->
+  <nav>
+    <a href="#">Головна</a>
+    <a href="biography.html">Біографія</a>
+    <a href="mygroup.html">Моя група</a>
+    <a href="hobby.html">Хоббі</a>
+    <a href="interesting.html">Цікаве</a>
+  </nav>
+
+  <!-- ====== БАНЕР ====== -->
+  <div class="banner">
+    Головний рекламний/інформаційний блок<br>
+    Тут розміщується основна банерна інформація
+  </div>
+
+  <!-- ====== ОСНОВНА ЧАСТИНА ====== -->
+  <div class="container">
+
+    <!-- КОНТЕНТ -->
+    <div class="content">
+
+      <div class="block">
+        <h3>Біографія</h3>
+        <p>Коротка інформація про мене.</p>
+        <a href="biography.html">Детальніше >></a>
+      </div>
+
+      <div class="block">
+        <h3>Група</h3>
+        <p>Інформація про групу СП-33.</p>
+        <a href="mygroup.html">Детальніше >></a>
+      </div>
+
+      <div class="block">
+        <h3>Хоббі 1</h3>
+        <p>Опис першого захоплення.</p>
+        <a href="hobby.html">Детальніше >></a>
+      </div>
+
+      <div class="block">
+        <h3>Хоббі 2</h3>
+        <p>Опис другого захоплення.</p>
+        <a href="hobby.html">Детальніше >></a>
+      </div>
+
+      <div class="block">
+        <h3>Хоббі 3</h3>
+        <p>Опис третього захоплення.</p>
+        <a href="hobby.html">Детальніше >></a>
+      </div>
+
+      <div class="block">
+        <h3>Цікаве 1</h3>
+        <p>Факт або стаття 1.</p>
+        <a href="interesting.html">Детальніше >></a>
+      </div>
+
+      <div class="block">
+        <h3>Цікаве 2</h3>
+        <p>Факт або стаття 2.</p>
+        <a href="interesting.html">Детальніше >></a>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <div class="ad">Рекламний блок 1</div>
+      <div class="ad">Рекламний блок 2</div>
+      <div class="ad">Рекламний блок 3</div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
